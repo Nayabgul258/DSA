@@ -33,7 +33,7 @@ public class Linkedlist {
       System.out.println();
   }
 
-
+ 
   public static void main(String args[]){
     int arr [] = {4,6,2,7};
     Node head = covertArr2LL(arr);
