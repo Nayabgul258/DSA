@@ -22,14 +22,13 @@ private static Node convertArr(int arr[]){
     }
     return head;
    } 
-private static  void print(Node head){
+private static  void Print(Node head){
     while(head != null){
       System.out.print(head.data + " ");
       head = head.next;
     }
     System.out.println();
 }
-
 private static int  Lengthofll(Node head){
    int cnt =0;
    Node temp = head;
@@ -39,10 +38,18 @@ private static int  Lengthofll(Node head){
    }
    return cnt;
 }
-
+private static int checkPresent(Node head, int val){
+    Node temp = head;
+    while(temp != null ){
+        if(temp.data == val ) return 1;
+         temp = temp.next;
+    }
+    return 0;
+}
    public static void main(String[] args) {
-    int arr [] = {4,6,2,7,5,9,10};
+    int arr [] = {4,5,2,7,5,9,10};
     Node head = convertArr(arr);
-    System.out.println(Lengthofll(head));
+     System.out.println(checkPresent(head, 2));
    }
 }
+
