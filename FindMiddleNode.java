@@ -17,6 +17,7 @@ class Node{
 
 
 public class FindMiddleNode {
+    //Brute opporoch 
     private  static Node Middle(Node head){
 
         if(head == null || head.next == null){
@@ -38,12 +39,24 @@ public class FindMiddleNode {
         }
         return temp;    
      } 
-
+      
+     private static Node FindMiddle(Node head){
+        Node slow = head;
+        Node fast = head;
+        while (fast != null &&  fast.next != null) {
+           slow = slow.next;
+           fast = fast.next.next;   
+        }
+        return slow;
+     }
 public static void main(String[] args) {
     Node head = new Node(1);
     head.next = new Node(2);
     head.next.next = new Node(3);
-    Node mid = Middle(head);
+    head.next.next.next =new Node(4);
+    head.next.next.next.next =new Node(5);
+    head.next.next.next.next.next =new Node(6);
+    Node mid = FindMiddle(head);
     System.out.println(mid.data);
 }
 
