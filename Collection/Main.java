@@ -1,8 +1,12 @@
 package Collection;
+import java. util.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
 
 public class Main {
 
@@ -10,10 +14,11 @@ public class Main {
         // list or collection --> interface(cant create object for this )
         // arraylist --> concrete class
 
-        // collection<Interger> List = new ArrayList<>();--> type of write List
-        // List<Integer> List = new ArrayList<>();
+        // collection<Integer> List = new ArrayList<>();--> type of write List
+       // List<Integer> List = new ArrayList<>();
 
-        ArrayList<Integer> A = new ArrayList<>();
+        //List<Integer> A = new <>();
+        List<Integer> A = new Vector<>();
         // add
         A.add(10);
         A.add(20);
@@ -64,6 +69,37 @@ public class Main {
         System.out.println(A);
         Collections.sort(A);
         System.out.println(A);
+
+
+//LinkedList 
+        LinkedList<Integer> ll = new LinkedList<>();
+        ll.add(10);
+        ll.add(20);
+        //System.out.println(ll);
+
+        ll.addFirst(5);
+        //System.out.println(ll);
+
+        ll.addLast(30);
+        //System.out.println(ll);
+
+        // System.out.println(ll.getFirst());
+        // System.out.println(ll.getLast());
+        // System.out.println(ll.removeFirst());
+        // System.out.println(ll);
+        // System.out.println(ll.removeLast());
+        // System.out.println(ll);
+        // ll.set(0, 30);
+        // System.out.println(ll);
+        
+        //System.out.println(ll.peek());
+        
+        //System.out.println(ll.poll());
+
+ll.offer(40);
+System.out.println(ll);
+
+
 
     }
 }
