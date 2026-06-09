@@ -22,7 +22,7 @@ public class Main {
         // add
         A.add(10);
         A.add(20);
-        A.add(30);
+        A.add(30); 
         System.out.println("Insert element  A = " + A);
 
         // size
