@@ -32,7 +32,6 @@ public class HashMapBasic {
         for(Map.Entry<Integer, String> enter:m1.entrySet() ) {
             System.out.println("key" +" "+ enter.getKey() +" "+ "value" +" " + enter.getValue());
         }
-
     }
 
 }
