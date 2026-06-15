@@ -43,9 +43,12 @@ public class FindHighestLowestMode {
 
     public static void main(String[] args) {
         int arr[] ={1,2,3,4,2,4,4,};
-        int ans[]= getHighestLowestModeOfArray(arr);
-        System.out.println(ans[0] +" " +  ans[1]);
+        int key[]= getHighestLowestModeOfArray(arr);
+        System.out.println("Highest key " + key[0] +" " + "Lowest Key" +" " +  key[1]);
 
     }
+
+    //Time complexity = O(n)
+    //space Complexity = O(1)
 
 }
