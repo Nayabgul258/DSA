@@ -20,4 +20,7 @@ public class FindMissingEle {
         int  m = 10;
         System.out.println(FindMissingElement(arr,m));
     }
+
+    //Time complexity O(n)
+    //Space complexity O(1)
 }
