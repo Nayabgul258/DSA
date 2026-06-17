@@ -19,8 +19,6 @@ public class TwoSumArray {
 
     public static void main(String[] args) {
         int arr[] = { 1, 4, 3, 6, 7 };
-    
-
-        System.out.println(Arrays.toString(TwoSum(arr, 5)));
+         System.out.println(Arrays.toString(TwoSum(arr, 5)));
     }
 }
