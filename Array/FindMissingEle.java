@@ -16,8 +16,8 @@ public class FindMissingEle {
     }
 
     public static void main(String[] args) {
-        int arr [] = {1,2,3,5,0,4};
-        int  m = 10;
+        int arr [] = {1,2,3,5,0};
+        int  m = 5;
         System.out.println(FindMissingElement(arr,m));
     }
 
