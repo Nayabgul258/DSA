@@ -1,6 +1,6 @@
 package Array;
 
-public class SumOf2DArray {
+public class SumOf2DArrayRow {
     static void sumOf2DArrayElement(int arr[][]) {
   int row = arr.length;
     int column = arr[0].length;
