@@ -1,7 +1,7 @@
 package Array;
 
-public class PrintSprialMatrix {
-    static void PrintSprialMatrix(int arr[][]) {
+public class PrintSpiralMatrix {
+    static void printSpiralMatrix(int arr[][]) {
         int m = arr.length;
         int n = arr[0].length;
 
@@ -45,7 +45,7 @@ public class PrintSprialMatrix {
            {4,5,6},
            {7,8,9}
         };
-        PrintSprialMatrix(arr);
+        printSpiralMatrix(arr);
 
 
        
@@ -53,6 +53,7 @@ public class PrintSprialMatrix {
     // output -> 1 2 3 6 9 8 7 4 5
     // Tc -> O(row * col ) = O(n2);
     //Sc -> O(1);
+    // DSA Pattern 2D Matrix Traversal + Boundary Traversal
 
 
 }
