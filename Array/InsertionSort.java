@@ -4,14 +4,22 @@ public class InsertionSort {
     static void InsertionSort(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
-            int current = i;
-            int previous = i - 1;
-            int currentValue = arr[i];
-            while (previous >= 0 && currentValue < arr[previous]) {
-                arr[previous + 1] = arr[previous];
-                previous--;
+            int j = i;
+            while (j > 0 && arr[j - 1] > arr[j]) {
+                int temp = arr[j - 1];
+                arr[j - 1] = arr[j];
+                arr[j] = temp;
+                j--;
             }
-            arr[previous + 1] = currentValue;
+
+            // int current = i;
+            // int previous = i - 1;
+            // int currentValue = arr[i];
+            // while (previous >= 0 && currentValue < arr[previous]) {
+            // arr[previous + 1] = arr[previous];
+            // previous--;
+            // }
+            // arr[previous + 1] = currentValue;
 
         }
     }
