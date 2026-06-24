@@ -15,9 +15,12 @@ public class BinarySearch {
                 start = mid + 1;
             else
                 end = mid - 1;
+        mid  = start + (end - start) / 2;
         }
+         
+        
         return -1;
-
+           
     }
 
     public static void main(String[] args) {
